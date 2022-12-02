@@ -8,8 +8,17 @@
 
 <p><a href="http://vps470554.ovh.net/web/page1.html" target="iframe_a">Logrhythm</a></p>
 <p><a href="http://vps470554.ovh.net/web/page2.html" target="iframe_a">Trend</a></p>
-<p><a href="http://vps470554.ovh.net/web/page3.html" target="iframe_a">Syslog</a></p>>
+<p><a href="http://vps470554.ovh.net/web/page3.html" target="iframe_a">Syslog</a></p>
+
  
+ <?php
+$x = 1;
+
+while($x <= 5) {
+  echo "The number is: $x <br>";
+  $x++;
+}
+?>
 
 
 </body>

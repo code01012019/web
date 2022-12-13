@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<iframe id="rotator" src="https://www.yahoo.com"></iframe>
+
+<script>
+// start when the page is loaded
+window.onload = function() {
+
+  var urls = [
+    "https://www.google.com",
+    "https://www.atb.tn",
+    "https://www.atbnet.tn"
+  ];
+
+  var index = 1;
+  var el = document.getElementById("rotator");
+
+  setTimeout(function rotate() {
+
+    if ( index === urls.length ) {
+      index = 0;
+    }
+
+    el.src = urls[index];
+    index  = index + 1;
+
+    // continue rotating iframes
+    setTimeout(rotate, 5000);
+
+  }, 5000); // 5000ms = 5s
+};
+</script>
+</body>
+</html>

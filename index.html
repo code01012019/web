@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe id="rotator" src="http://vps470554.ovh.net/web/page1.html" name="iframe_a" height="600px" width="100%" title="ATB SOC"></iframe>
+
+<script>
+// start when the page is loaded
+window.onload = function() {
+
+  var urls = [
+    "http://vps470554.ovh.net/web/page1.html",
+    "http://vps470554.ovh.net/web/page2.html",
+    "http://vps470554.ovh.net/web/page3.html"
+  ];
+
+  var index = 1;
+  var el = document.getElementById("rotator");
+
+  setTimeout(function rotate() {
+
+    if ( index === urls.length ) {
+      index = 0;
+    }
+
+    el.src = urls[index];
+    index  = index + 1;
+
+    // continue rotating iframes
+    setTimeout(rotate, 5000);
+
+  }, 5000); // 5000ms = 5s
+};
+</script>
+</body>
+</html>

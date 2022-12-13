@@ -15,8 +15,10 @@
 $x = 1;
 
 while($x <= 5) {
-  echo "The number is: $x <br>";
-  $x++;
+  //echo "The number is: $x <br>";
+  <iframe src="page1.html" name="iframe_a" height="600px" width="100%" title="Iframe Example"></iframe>
+  $x=$x+1;
+  sleep(1);
 }
 
 ?>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+           var urls = [
+              "http://www.google.com"
+              ,"http://www.yahoo.com"
+              ,"http://www.ajaxian.com"
+              ,"http://www.ebay.com"
+           ];
+
+
+
+           function showUrl(idx) {
+              alert(idx + " Showing " + urls[idx]);
+              var f = document.getElementById("f");
+
+              // call the next load  after 5 seconds only after 
+              // this iframe loads
+              f.onload = function()   {
+                 var next = ++idx % urls.length;
+                 setTimeout(function(){
+                    showUrl(next);
+                 }, 5000);  
+              }
+              // set the src
+              f.src = urls[idx];
+           }
+
+        </script>
+</body>
+</html>

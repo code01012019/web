@@ -1,0 +1,30 @@
+input {
+    margin: 0px;
+    vertical-align: middle;
+}
+
+select {
+    vertical-align: middle;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+}
+
+label {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+label:first-child {
+    padding-left: 0px;
+}
+
+#interval {
+    width: 75px;
+}

@@ -1,0 +1,41 @@
+{
+    "extensionName": {
+        "message": "Browser Switch Tab"
+    },
+    "extensionDescription": {
+        "message": "Browser switch tabs."
+    },
+    "browserActionTitle": {
+        "message": "Start slideshow"
+    },
+    "browserActionTitleRunning": {
+        "message": "Stop slideshow"
+    },
+    "interval": {
+        "message": "Interval"
+    },
+    "seconds": {
+        "message": "Seconds"
+    },
+    "orderText": {
+        "message": "Order"
+    },
+    "forward": {
+        "message": "Forward"
+    },
+    "reverse": {
+        "message": "Reverse"
+    },
+    "random": {
+        "message": "Random"
+    },
+    "reloadText": {
+        "message": "Reload"
+    },
+    "automaticallyStartText": {
+        "message": "Automatically start"
+    },
+    "toggleSlideshow": {
+        "message": "Toggle slideshow"
+    }
+}
